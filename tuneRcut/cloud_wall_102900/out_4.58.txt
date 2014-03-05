@@ -1,0 +1,240 @@
+Running generic test with 1 processes
+Reading testcase file systems/3d-periodic/cloud_wall_102900.xml.gz...
+Parsing file...
+Read testcase "cloud-wall"
+  "A 3D-periodic system of two walls charges and a random cloud of charges."
+  Reference: ewald (error_potential=1e-13 error_field=1e-13)
+  config 0:
+    system:
+      box: offset: [0,0,0], size: [10,0,0]x[0,10,0]x[0,0,10]
+      periodicity = (1, 1, 1)
+    input particles: 300
+    input file: 0
+    total generated particles: 0
+    general duplication: 7x7x7 without rescaling
+    input references: 0
+      file: 
+      format: 0
+      offset: -1
+      ntotal: 0
+    periodic duplication: 1x1x1 (without rescaling)
+    decomposition: atomistic
+    total particles (incl. duplications): (300 + 0 + 0) * 343 = 102900
+  Got 1 configurations.
+Particle array allocation: minalloc: 0, overalloc: -0.1
+Initializing FCS, method p3m...
+Setting method configuration parameters...
+  Config parameters:
+    XML file: 
+    Command line: p3m_r_cut,4.58
+Broadcast config ...
+Processing configuration 0...
+Broadcast input ...
+Decomposing system (atomistic)...
+  Setting basic parameters...
+    Total number of particles: 102900 (0 input-only particles)
+  Dipole correction:
+    Field correction: 0 0 0
+    Energy correction: 0
+  Tuning method...
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is required.
+  Tuning P3M to p3m_tolerance_field=1.000000e-03
+    r_cut=4.580000 (fixed)
+    alpha=0.560274
+    r_cut=4.580000, cao={ 6 5 4 3 2 1 }
+    Trying to find grid for r_cut=4.580000, cao=7
+      => grid=(80, 80, 80), alpha=0.560274, error=7.106503e-04
+    Trying to find grid for r_cut=4.580000, cao=6
+      => grid=(80, 80, 80), alpha=0.560274, error=7.223552e-04
+      better than previous => removing previous data set
+    Trying to find grid for r_cut=4.580000, cao=5
+      => grid=(80, 80, 80), alpha=0.560274, error=7.957419e-04
+      better than previous => removing previous data set
+    Trying to find grid for r_cut=4.580000, cao=4
+      => grid=(88, 88, 88), alpha=0.560274, error=9.827068e-04
+    Trying to find grid for r_cut=4.580000, cao=3
+      => grid=(140, 140, 140), alpha=0.560274, error=9.647725e-04
+      grid too large => removing data set
+Timing 2 param sets...
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.609082e+00 (1.000000)
+      far=3.667681e-01 (0.227936)
+     near=1.212255e+00 (0.753383)
+       ca=3.166389e-02 (0.019678)
+      pot=2.793193e-02 (0.017359)
+   fields=1.046200e-01 (0.065018)
+   gather=7.519722e-04 (0.000467)
+   spread=2.887011e-03 (0.001794)
+  forward=4.083204e-02 (0.025376)
+     back=1.503742e-01 (0.093453)
+   decomp=2.219701e-02 (0.013795)
+     comp=7.862091e-03 (0.004886)
+ifcs_p3m_run() finished.
+  Timing r_cut=4.580000, alpha=0.560274, grid=(80, 80, 80), cao=5 => timing=1.609082 (1.212255 near, 0.366768 far)
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(88, 88, 88), cao=4, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.641296e+00 (1.000000)
+      far=4.097998e-01 (0.249681)
+     near=1.205381e+00 (0.734408)
+       ca=2.423215e-02 (0.014764)
+      pot=1.997495e-02 (0.012170)
+   fields=8.610296e-02 (0.052460)
+   gather=8.618832e-04 (0.000525)
+   spread=3.035069e-03 (0.001849)
+  forward=5.421209e-02 (0.033030)
+     back=2.112999e-01 (0.128740)
+   decomp=2.128100e-02 (0.012966)
+     comp=4.834175e-03 (0.002945)
+ifcs_p3m_run() finished.
+  Timing r_cut=4.580000, alpha=0.560274, grid=(88, 88, 88), cao=4 => timing=1.641296 (1.205381 near, 0.409800 far)
+  Tuning was successful.
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_tune() finished.
+    Time: 4.950011e+00
+  Running method...
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.584268e+00 (1.000000)
+      far=3.572874e-01 (0.225522)
+     near=1.201564e+00 (0.758435)
+       ca=3.196716e-02 (0.020178)
+      pot=2.768898e-02 (0.017477)
+   fields=1.045048e-01 (0.065964)
+   gather=6.890297e-04 (0.000435)
+   spread=2.923012e-03 (0.001845)
+  forward=3.618693e-02 (0.022841)
+     back=1.466992e-01 (0.092597)
+   decomp=2.070785e-02 (0.013071)
+     comp=4.709005e-03 (0.002972)
+ifcs_p3m_run() finished.
+    #0 time: 1.584718e+00
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.583050e+00 (1.000000)
+      far=3.563030e-01 (0.225074)
+     near=1.202802e+00 (0.759800)
+       ca=3.060102e-02 (0.019330)
+      pot=2.757215e-02 (0.017417)
+   fields=1.046021e-01 (0.066076)
+   gather=7.219315e-04 (0.000456)
+   spread=2.700806e-03 (0.001706)
+  forward=3.599215e-02 (0.022736)
+     back=1.478221e-01 (0.093378)
+   decomp=1.944017e-02 (0.012280)
+     comp=4.504919e-03 (0.002846)
+ifcs_p3m_run() finished.
+    #1 time: 1.583492e+00
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.597750e+00 (1.000000)
+      far=3.560152e-01 (0.222823)
+     near=1.217485e+00 (0.762000)
+       ca=3.050995e-02 (0.019096)
+      pot=2.761889e-02 (0.017286)
+   fields=1.036723e-01 (0.064886)
+   gather=7.090569e-04 (0.000444)
+   spread=2.718925e-03 (0.001702)
+  forward=3.622198e-02 (0.022671)
+     back=1.476779e-01 (0.092429)
+   decomp=1.963210e-02 (0.012287)
+     comp=4.617929e-03 (0.002890)
+ifcs_p3m_run() finished.
+    #2 time: 1.598210e+00
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.590998e+00 (1.000000)
+      far=3.620899e-01 (0.227587)
+     near=1.204849e+00 (0.757291)
+       ca=3.066397e-02 (0.019273)
+      pot=2.790213e-02 (0.017538)
+   fields=1.080992e-01 (0.067944)
+   gather=6.861687e-04 (0.000431)
+   spread=2.794504e-03 (0.001756)
+  forward=3.622293e-02 (0.022767)
+     back=1.491239e-01 (0.093730)
+   decomp=1.959491e-02 (0.012316)
+     comp=4.463911e-03 (0.002806)
+ifcs_p3m_run() finished.
+    #3 time: 1.591445e+00
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(70.000000, 70.000000, 70.000000)
+    p3m params: r_cut=4.580000, grid=(80, 80, 80), cao=5, alpha=0.560274, grid_off=(0.500000, 0.500000, 0.500000)
+  P3M TIMINGS:
+    total=1.582304e+00 (1.000000)
+      far=3.592281e-01 (0.227028)
+     near=1.198714e+00 (0.757575)
+       ca=3.070307e-02 (0.019404)
+      pot=2.748799e-02 (0.017372)
+   fields=1.063290e-01 (0.067199)
+   gather=7.140636e-04 (0.000451)
+   spread=2.852917e-03 (0.001803)
+  forward=3.637886e-02 (0.022991)
+     back=1.484811e-01 (0.093839)
+   decomp=1.974106e-02 (0.012476)
+     comp=4.621029e-03 (0.002920)
+ifcs_p3m_run() finished.
+    #4 time: 1.582782e+00
+    Average time: 1.588129e+00
+    Total time:   7.940647e+00
+  ABSOLUTE ERRORS (from 102900 of 102900 particles)
+          abs_rms_field_error =    1.340393e-03
+          abs_max_field_error =    3.913988e-03
+      abs_rms_potential_error =    6.656782e-04
+      abs_max_potential_error =    1.809162e-03
+             abs_energy_error =    1.523890e+01
+
+  RELATIVE ERRORS (from 102900 of 102900 particles)
+          rel_rms_field_error =    3.121027e-04
+          rel_max_field_error =    9.113496e-04
+      rel_rms_potential_error =    3.089502e-04
+      rel_max_potential_error =    8.396563e-04
+             rel_energy_error =    2.982902e-04
+
+             total_energy_ref =    5.108749e+04
+                 total_energy =    5.110273e+04
+Freeing data (atomistic)...
+Destroying FCS ...
+Done.

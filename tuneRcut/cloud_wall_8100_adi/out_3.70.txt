@@ -1,0 +1,2324 @@
+Running generic test with 1 processes
+Reading testcase file systems/3d-periodic/cloud_wall_8100.xml.gz...
+Parsing file...
+Read testcase "cloud-wall"
+  "A 3D-periodic system of two walls charges and a random cloud of charges."
+  Reference: ewald (error_potential=1e-13 error_field=1e-13)
+  config 0:
+    system:
+      box: offset: [0,0,0], size: [10,0,0]x[0,10,0]x[0,0,10]
+      periodicity = (1, 1, 1)
+    input particles: 300
+    input file: 0
+    total generated particles: 0
+    general duplication: 3x3x3 without rescaling
+    input references: 0
+      file: 
+      format: 0
+      offset: -1
+      ntotal: 0
+    periodic duplication: 1x1x1 (without rescaling)
+    decomposition: atomistic
+    total particles (incl. duplications): (300 + 0 + 0) * 27 = 8100
+  Got 1 configurations.
+Particle array allocation: minalloc: 0, overalloc: -0.1
+Initializing FCS, method p3m...
+Setting method configuration parameters...
+  Config parameters:
+    XML file: 
+    Command line: p3m_r_cut,3.70
+Broadcast config ...
+Processing configuration 0...
+Broadcast input ...
+Decomposing system (atomistic)...
+  Setting basic parameters...
+    Total number of particles: 8100 (0 input-only particles)
+  Dipole correction:
+    Field correction: 0 0 0
+    Energy correction: 0
+  Tuning method...
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is required.
+  Tuning P3M to p3m_tolerance_field=1.000000e-03
+    r_cut=3.700000 (fixed)
+    alpha=0.699124
+    r_cut=3.700000, cao={ 6 5 4 3 2 }
+    Trying to find grid for r_cut=3.700000, cao=7
+      => grid=(30, 30, 30), alpha=0.699124, error=7.553107e-04
+    Trying to find grid for r_cut=3.700000, cao=6
+      => grid=(28, 28, 28), alpha=0.699124, error=8.411115e-04
+      better than previous => removing previous data set
+    Trying to find grid for r_cut=3.700000, cao=5
+      => grid=(26, 26, 26), alpha=0.699124, error=9.343558e-04
+      better than previous => removing previous data set
+    Trying to find grid for r_cut=3.700000, cao=4
+      => grid=(36, 36, 36), alpha=0.699124, error=7.739646e-04
+    Trying to find grid for r_cut=3.700000, cao=3
+      => grid=(78, 78, 78), alpha=0.699124, error=9.557449e-04
+      grid too large => removing data set
+Timing 2 param sets...
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(26, 26, 26), cao=5, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -989 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -988 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -958 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -957 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -927 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -926 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -865 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -864 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -834 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -833 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -803 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -802 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -772 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -771 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -741 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -28 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -27 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -900 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -195 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -355 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -196 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -197 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -227 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -228 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -289 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -290 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -320 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -321 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -351 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -352 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -382 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -383 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -413 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -414 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -444 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -445 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -710 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -709 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -648 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -647 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -617 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -616 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -586 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -585 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -555 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -554 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -524 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -523 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -652 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -462 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -431 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -430 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -400 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -399 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -369 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -368 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -338 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -337 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -307 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -306 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -245 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -244 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -214 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -443 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -634 < 0
+grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -373 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -506 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -507 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -537 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -538 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -568 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -569 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -599 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -600 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -630 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -631 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -692 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -693 < 0
+grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -891 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -731 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -722 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -882 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -10 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -11 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -723 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -724 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -754 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -755 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -785 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -786 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -816 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -817 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -847 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -848 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -909 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -910 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -940 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -941 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -971 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -972 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -643 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -452 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -364 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -204 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -989 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -988 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -958 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -957 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -927 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -926 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -865 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -864 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -834 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -833 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -803 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -802 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -772 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -771 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -741 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -28 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -27 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -900 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -195 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -355 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -196 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -197 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -227 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -228 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -289 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -290 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -320 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -321 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -351 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -352 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -382 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -383 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -413 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -414 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -444 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -445 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -710 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -709 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -648 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -647 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -617 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -616 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -586 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -585 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -555 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -554 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -524 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -523 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -652 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -462 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -431 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -430 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -400 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -399 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -369 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -368 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -338 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -337 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -307 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -306 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -245 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -244 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -214 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -443 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -634 < 0
+grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -373 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -506 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -507 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -537 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -538 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -568 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -569 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -599 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -600 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -630 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -631 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -692 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -693 < 0
+grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -891 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -731 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -722 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -882 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -10 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -11 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -723 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -724 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -754 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -755 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -785 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -786 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -816 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -817 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -847 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -848 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -909 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -910 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -940 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -941 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -971 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -972 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -643 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -452 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -364 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -204 < 0
+  computing unshifted grid
+  computing shifted grid
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -989 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -988 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -958 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -957 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -927 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -926 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -896 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -895 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -865 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -864 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -834 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -833 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -803 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -802 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -772 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -771 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -741 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -28 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -27 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -900 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -740 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -195 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -355 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -196 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -197 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -227 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -228 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -258 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -259 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -289 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -290 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -320 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -321 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -351 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -352 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -382 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -383 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -413 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -414 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -444 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -445 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -710 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -709 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -679 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -678 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -648 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -647 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -617 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -616 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -586 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -585 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -555 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -554 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -524 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -523 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -493 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -492 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -652 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -462 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -461 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -431 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -430 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -400 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -399 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -369 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -368 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -338 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -337 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -307 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -306 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -276 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -275 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -245 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -244 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -214 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -443 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -634 < 0
+grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -373 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -213 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -475 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -476 < 0
+grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -506 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -507 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -537 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -538 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -568 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -569 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -599 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -600 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -630 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -631 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -661 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -662 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -692 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -693 < 0
+grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.344753, pos_shift=1.500000, real_pos=0.179131, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.492120, pos_shift=1.500000, real_pos=0.009092, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.210534, pos_shift=1.500000, real_pos=0.333999, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.050850, pos_shift=1.500000, real_pos=0.518250, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.033102, pos_shift=1.500000, real_pos=0.538729, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.045841, pos_shift=1.500000, real_pos=0.524030, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[2]=-1 < 0
+pos=-0.002662, pos_shift=1.500000, real_pos=0.573852, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -980 < 0
+grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -949 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -918 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -887 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -856 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -825 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -794 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -763 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -732 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -19 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -891 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -731 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -722 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -882 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -10 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -11 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -723 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -724 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -754 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -755 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -785 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -786 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -816 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -817 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -847 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -848 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -878 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -879 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -909 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -910 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -940 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -941 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -971 < 0
+grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -972 < 0
+grid_ind[1]=-1 < 0
+pos=-0.466954, pos_shift=1.500000, real_pos=0.038130, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.003326, pos_shift=1.500000, real_pos=0.573085, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.463738, pos_shift=1.500000, real_pos=0.041841, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.241110, pos_shift=1.500000, real_pos=0.298719, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[1]=-1 < 0
+pos=-0.181503, pos_shift=1.500000, real_pos=0.367497, ld_pos=-1.730769, ai=0.866667, shifted=1grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -701 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -670 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -639 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -608 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -577 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -546 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -515 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -484 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -643 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -452 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -453 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -422 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -391 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -360 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -329 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -298 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -267 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -236 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.500000, pos_shift=1.500000, real_pos=0.000000, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -205 < 0
+grid_ind[0]=-1 < 0
+pos=-0.307500, pos_shift=1.500000, real_pos=0.222115, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -364 < 0
+grid_ind[0]=-1 < 0
+pos=-0.063271, pos_shift=1.500000, real_pos=0.503918, ld_pos=-1.730769, ai=0.866667, shifted=1ERROR: 0: linind -204 < 0
+  P3M TIMINGS:
+    total=6.188226e-02 (1.000000)
+      far=1.692486e-02 (0.273501)
+     near=4.315114e-02 (0.697310)
+       ca=3.720045e-03 (0.060115)
+      pot=3.386021e-03 (0.054717)
+   fields=8.169889e-03 (0.132023)
+   gather=1.449585e-04 (0.002342)
+   spread=1.881123e-04 (0.003040)
+  forward=4.699230e-04 (0.007594)
+     back=7.300377e-04 (0.011797)
+   decomp=1.504183e-03 (0.024307)
+     comp=3.020763e-04 (0.004881)
+ifcs_p3m_run() finished.
+  Timing r_cut=3.700000, alpha=0.699124, grid=(26, 26, 26), cao=5 => timing=0.061882 (0.043151 near, 0.016925 far)
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.540180e-02 (1.000000)
+      far=1.156402e-02 (0.208730)
+     near=4.228401e-02 (0.763224)
+       ca=1.966238e-03 (0.035491)
+      pot=1.651049e-03 (0.029801)
+   fields=4.330158e-03 (0.078159)
+   gather=2.198219e-04 (0.003968)
+   spread=4.017353e-04 (0.007251)
+  forward=9.069443e-04 (0.016370)
+     back=1.786947e-03 (0.032254)
+   decomp=1.409769e-03 (0.025446)
+     comp=1.440048e-04 (0.002599)
+ifcs_p3m_run() finished.
+  Timing r_cut=3.700000, alpha=0.699124, grid=(36, 36, 36), cao=4 => timing=0.055402 (0.042284 near, 0.011564 far)
+  Tuning was successful.
+    Interpolating charge assignment function...
+    Preparing FFTs...
+    Calculating influence function...
+ifcs_p3m_tune() finished.
+    Time: 6.311028e+00
+  Running method...
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.507898e-02 (1.000000)
+      far=1.145911e-02 (0.208049)
+     near=4.220390e-02 (0.766243)
+       ca=2.012730e-03 (0.036543)
+      pot=1.693010e-03 (0.030738)
+   fields=4.198074e-03 (0.076219)
+   gather=2.212524e-04 (0.004017)
+   spread=3.800392e-04 (0.006900)
+  forward=9.169579e-04 (0.016648)
+     back=1.721144e-03 (0.031249)
+   decomp=1.247883e-03 (0.022656)
+     comp=1.680851e-04 (0.003052)
+ifcs_p3m_run() finished.
+    #0 time: 5.515599e-02
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.501795e-02 (1.000000)
+      far=1.122499e-02 (0.204024)
+     near=4.245615e-02 (0.771678)
+       ca=1.952887e-03 (0.035495)
+      pot=1.770735e-03 (0.032185)
+   fields=4.141808e-03 (0.075281)
+   gather=2.081394e-04 (0.003783)
+   spread=3.774166e-04 (0.006860)
+  forward=8.380413e-04 (0.015232)
+     back=1.775980e-03 (0.032280)
+   decomp=1.195908e-03 (0.021737)
+     comp=1.409054e-04 (0.002561)
+ifcs_p3m_run() finished.
+    #1 time: 5.507898e-02
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.503893e-02 (1.000000)
+      far=1.117492e-02 (0.203037)
+     near=4.247308e-02 (0.771692)
+       ca=2.021074e-03 (0.036721)
+      pot=1.656771e-03 (0.030102)
+   fields=4.209995e-03 (0.076491)
+   gather=2.307892e-04 (0.004193)
+   spread=3.731251e-04 (0.006779)
+  forward=8.471012e-04 (0.015391)
+     back=1.675129e-03 (0.030435)
+   decomp=1.240969e-03 (0.022547)
+     comp=1.499653e-04 (0.002725)
+ifcs_p3m_run() finished.
+    #2 time: 5.509400e-02
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.522728e-02 (1.000000)
+      far=1.122689e-02 (0.203285)
+     near=4.264808e-02 (0.772228)
+       ca=1.991987e-03 (0.036069)
+      pot=1.687050e-03 (0.030547)
+   fields=4.135847e-03 (0.074888)
+   gather=2.129078e-04 (0.003855)
+   spread=3.993511e-04 (0.007231)
+  forward=8.740425e-04 (0.015826)
+     back=1.760721e-03 (0.031881)
+   decomp=1.216173e-03 (0.022021)
+     comp=1.361370e-04 (0.002465)
+ifcs_p3m_run() finished.
+    #3 time: 5.528808e-02
+ifcs_p3m_tune() started...
+    node_grid=1x1x1
+  Retuning is not required.
+ifcs_p3m_tune() finished.
+ifcs_p3m_run() started...
+    system parameters: box_l=(30.000000, 30.000000, 30.000000)
+    p3m params: r_cut=3.700000, grid=(36, 36, 36), cao=4, alpha=0.699124, grid_off=(0.500000, 0.500000, 0.500000)
+  computing unshifted grid
+  computing shifted grid
+  P3M TIMINGS:
+    total=5.554295e-02 (1.000000)
+      far=1.113009e-02 (0.200387)
+     near=4.308200e-02 (0.775652)
+       ca=1.941681e-03 (0.034958)
+      pot=1.654863e-03 (0.029794)
+   fields=4.170895e-03 (0.075093)
+   gather=2.002716e-04 (0.003606)
+   spread=3.933907e-04 (0.007083)
+  forward=8.280277e-04 (0.014908)
+     back=1.784801e-03 (0.032134)
+   decomp=1.194954e-03 (0.021514)
+     comp=1.358986e-04 (0.002447)
+ifcs_p3m_run() finished.
+    #4 time: 5.560207e-02
+    Average time: 5.524383e-02
+    Total time:   2.762191e-01
+  ABSOLUTE ERRORS (from 8100 of 8100 particles)
+          abs_rms_field_error =    3.771512e-03
+          abs_max_field_error =    5.204333e-03
+      abs_rms_potential_error =    3.959556e-04
+      abs_max_potential_error =    1.025797e-03
+             abs_energy_error =    1.148037e+00
+
+  RELATIVE ERRORS (from 8100 of 8100 particles)
+          rel_rms_field_error =    8.788026e-04
+          rel_max_field_error =    1.212665e-03
+      rel_rms_potential_error =    1.837998e-04
+      rel_max_potential_error =    4.761679e-04
+             rel_energy_error =    2.854774e-04
+
+             total_energy_ref =    4.021464e+03
+                 total_energy =    4.020316e+03
+Freeing data (atomistic)...
+Destroying FCS ...
+Done.
